@@ -93,7 +93,15 @@ $(document).ready(function () {
     
             let indiceActual = secuenciaJugador.length - 1;
             if (secuenciaJugador[indiceActual] !== secuenciaJuego[indiceActual]) {
-                $("#estadoJuego").text("Fallaste...");
+                $("#estadoJuego").text("Fallaste");
+            
+                let boton = $(".botonDecorativo");
+                boton.addClass("error"); 
+            
+                setTimeout(() => {
+                    boton.removeClass("error"); 
+                }, 1900);
+            
                 esperandoRespuesta = false;
                 setTimeout(iniciarJuego, 2000);
                 return;

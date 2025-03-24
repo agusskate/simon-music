@@ -293,6 +293,9 @@ label {
     align-items: center;
     justify-content: center;
  }
+ .error {
+    background-color: rgb(146, 0, 0) !important;
+}
 
  #estadoJuego{
     display: flex;
