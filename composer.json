@@ -1,0 +1,13 @@
+{
+    "name": "agustinam/ahorcado_version_grafica_mongo",
+    "description": "agustinam/ahorcado_version_grafica_mongo",
+    "type": "project",
+    "require": {
+        "mongodb/mongodb": "^1.20"
+    },
+    "authors": [
+        {
+            "name": "agustinam"
+        }
+    ]
+}

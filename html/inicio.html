@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styleInicio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/game.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="body">
+    <div class="contenedorGlobal">
+        <div class="contenedorGameBoy">
+            <div class="gambeBoySuperior">
+
+                <div class="contenedorPantalla">
+
+                    <div class="pantalla">
+                        <div class="lines"></div>
+
+                        <video id="videoFondo" autoplay muted loop>
+                            <source src="../multimedia/videoGameplay.mp4" type="video/mp4">
+ 
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                        
+                        <!-- SIMON -->
+                        <div class="contenedorOpciones">
+                            <div class="contenedorJuego">
+                                <div class="fila">
+                                    <button class="botonColor verde" data-color="verde"></button>
+                                    <button class="botonColor rojo" data-color="rojo"></button>
+                                    <button class="botonColor azul" data-color="azul"></button>
+                                </div>
+                                <div class="fila">
+                                    <button class="botonColor amarillo" data-color="amarillo"></button>
+
+                                    <div class="botonDecorativo" data-color="amarillo">
+                                        <div id="estadoJuego">Presiona "Start"</div>
+                                    </div>
+
+                                    <button class="botonColor morado" data-color="morado"></button>
+                                </div>
+                                <div class="fila">
+                                    <button class="botonColor rosa" data-color="rosa"></button>
+                                    <button class="botonColor naranja" data-color="naranja"></button>
+                                    <button class="botonColor celeste" data-color="celeste"></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+ 
+                    </div>
+                    
+                    <div class="logoGameboy">
+                        <img src="../multimedia/logoGameboy.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="gameboyMedio"></div>
+            
+            <div class="gameboyInferior">
+
+                <div class="contenedorVolumeOpciones">
+                    <div class="controlMusica">
+ 
+                        <input type="range" id="volumenMusica" min="0" max="1" step="0.1" value="0" orient="vertical">
+                        
+                        <audio id="reproductor" autoplay loop>
+                            <source src="../multimedia/canciones/cancionSimon.mp3" type="audio/mp3">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+    
+    
+    
+                    <div class="botonOpciones">
+                        <button class="start">start</button>
+                        <button class="salir" onclick="window.location.href='../html/index.html'">salir</button>
+    
+                    </div>
+                </div>
+
+                
+
+
+                <div class="botonesAB">
+                    <div class="botonB"><button>B</button></div> 
+                    <div class="botonA"><button>A</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
